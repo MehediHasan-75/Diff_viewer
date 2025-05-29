@@ -1,0 +1,112 @@
+.diff-container {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.diff-block {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.diff-block__header {
+  background-color: #f1f8ff;
+  padding: 8px 16px;
+  color: #586069;
+  border-bottom: 1px solid #ddd;
+}
+
+.diff-line {
+  display: flex;
+  padding: 0;
+  background-color: #fff;
+}
+
+.diff-line--add {
+  background-color: #e6ffed;
+}
+
+.diff-line--remove {
+  background-color: #ffeef0;
+}
+
+.diff-line__numbers {
+  display: flex;
+  padding: 0 8px;
+  border-right: 1px solid #ddd;
+  background-color: #fafbfc;
+  user-select: none;
+}
+
+.diff-line__number {
+  width: 40px;
+  text-align: right;
+  color: #666;
+  padding: 0 4px;
+}
+
+.diff-line__prefix {
+  width: 20px;
+  padding: 0 4px;
+  color: #586069;
+  user-select: none;
+}
+
+.diff-line__content {
+  flex: 1;
+  padding: 0 8px;
+  white-space: pre;
+}
+
+.action-button {
+  padding: 8px 16px;
+  margin: 0 8px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-button--accept {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.action-button--accept:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.action-button--reject {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.action-button--reject:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.action-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+#action-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#diff-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
